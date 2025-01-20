@@ -1,32 +1,108 @@
 * {
+    font-family: monospace;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
 body {
-    width: 100%;
-    height: 100vh;
     display: grid;
-    grid-template-rows: 1.15fr 5fr; 
-    grid-template-columns: 0.9fr 4fr; 
+    grid-template-rows: 1.6fr 5fr; 
+    grid-template-columns: 1.2fr 4fr; 
 }
 
 header {
     display: grid;
     background-color: white;
+    grid-column-start: 2;
+    grid-row-start: 1;
 }
  
-.main-content {
-    display: grid;
-    background-color: #E1E1E1;
-}
+
 
 .sidebar {
     display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr 0.7fr 2fr;
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: 3;
+    gap: 20px;
     background-color: #4190D1;
+    color: white;
+    padding: 20px 0px 0 30px;
+    font-family: monospace;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.sidebar .sidebar-top{
+}
+.sidebar .sidebar-bottom {
+    gap: 0;
+}
+/* // .main-content */
+.main-content {
+    padding: 60px;
+    display: grid;
+    grid-template-rows: 1.1fr 0.9fr;
+    grid-template-columns: 2.6fr 1fr;
+    background-color: #E1E1E1;
+}
+.projects {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-right: 30px;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 20px;
+}
+.projects > div {
+    background-color: white;
+    border-left: solid 10px orange;
+    height: 300px; 
+    border-radius: 15px;
+    padding: 30px 20px 20px 20px;   
+}
+.your-projects {
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.announcements-div, .trending-div {
+    border-radius: 15px;
+    background-color: white;
+}
+
+.projects h4 {
+    font-size: 1.5rem;
+}
+ul > li , ul a{
+    color: inherit;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+
+/* .announcement and .trending */
+.announcements-div, .trending-div {
+    padding: 40px 30px 30px 30px;
+    font-size: 1rem;
+}
+.announcements-div div {
+    padding-bottom: 20px;
+    padding-top: 20px;
+    border-bottom: 1px solid ;
+}
+.announcements-div div:nth-child(3) {
+    border-bottom: none;
+
+}
+.announcements-div h5 {
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+.your-projects > h4, .announcement h4,
+.trending h4 {
+    font-size: 2rem;
+    padding-bottom: 15px;
 }
