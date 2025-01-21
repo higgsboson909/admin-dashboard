@@ -72,9 +72,11 @@ header {
     border-radius: 15px;
     background-color: white;
 }
-
 .projects h4 {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
+}
+.projects div p {
+    font-size: 1.3rem;
 }
 ul > li , ul a{
     color: inherit;
@@ -105,4 +107,24 @@ ul > li , ul a{
 .trending h4 {
     font-size: 2rem;
     padding-bottom: 15px;
+}
+
+.trending-div h5 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 1.6rem;
+}
+.trending-div div {
+    font-size: 1.4rem;
+}
+.trending-div .pfp {
+    border: 1px solid black;
+    width: 60px;
+    height: 60px;
+}
+.trending-div > div {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding-bottom: 40px;
 }
