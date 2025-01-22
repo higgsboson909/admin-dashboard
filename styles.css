@@ -16,14 +16,52 @@ header {
     display: grid;
     background-color: white;
     grid-template-rows: repeat(2, 1fr);
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1.5fr 1fr;
     grid-column-start: 2;
     grid-row-start: 1;
+    font-weight: bold;
 }
 
- 
+.search {
+    margin-top: 25px;
+}
 
+.search input{
+    height: 50px;
+    width: 800px;
+    border-radius: 50px;
 
+}
+.search form input[type=text] {
+    border: none;
+    background-color: #e1e1e1;
+    padding: 10px;
+}
+
+header .name {
+    font-size: 2rem;
+}
+
+header .username {
+    font-size: 2.4rem;
+}
+.post-options {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-self: center;
+    gap: 20px;
+}
+.post-options li  {
+    font-size: 1.5rem; 
+    text-align: center;
+    width: 140px;
+    height: 55px;
+    padding-top: 11px;
+    color: white;
+    border-radius: 50px;
+    background-color: #4190D1;
+}
+/* side bar  */
 .sidebar {
     display: grid;
     grid-template-columns: 1fr;
